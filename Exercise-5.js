@@ -1,5 +1,5 @@
 function palindrome(kata) {
-    var balikKata = ''
+    var balikKata = '';
 
     for (let i = kata.length - 1; i >= 0; i--) {
         balikKata = balikKata + kata[i];
