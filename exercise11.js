@@ -1,16 +1,16 @@
 function tentukanDeretAritmatika(arr) {
     // you can only write your code here!
-    var hasil = true
     var selisih = arr[1] - arr[0]
-
-    for (i = 1; i < arr.length -1; i++) {
+    console.log(selisih)
+    var hasil = true
+    
+    for (let i = 0; i < arr.length - 1; i++) {
         if (selisih !== arr[i + 1] - arr[i]) {
             hasil = false
         }
     }
     return hasil
 }
-
 
 // TEST CASES
 console.log(tentukanDeretAritmatika([1, 2, 3, 4, 5, 6])); // true

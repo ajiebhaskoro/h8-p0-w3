@@ -1,16 +1,15 @@
 function tentukanDeretGeometri(arr) {
-    // you can only write your code here!
+    // you can only write your code here!\
+    var selisih = arr[1] / arr[0]
+    console.log(selisih)
     var hasil = true
-    var kali = arr[1] / arr[0]
-    // console.log(kali)
 
-    for (i = 1; i < arr.length - 1; i++) {
-        if (kali !== arr[i + 1] / arr[i]) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (selisih !== arr[i + 1] / arr[i]) {
             hasil = false
         }
     }
     return hasil
-
 }
 
 // TEST CASES
